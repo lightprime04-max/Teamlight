@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pratik Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#38bdf8;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#cbd5f5;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#94a3b8;
+max-width:600px;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 28px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+color:#020617;
+font-weight:600;
+cursor:pointer;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 10%;
+text-align:center;
+}
+
+.products h2{
+margin-bottom:40px;
+font-size:32px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.price{
+margin:10px 0;
+color:#38bdf8;
+font-weight:600;
+}
+
+.card button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+background:#38bdf8;
+border-radius:6px;
+color:#020617;
+font-weight:600;
+cursor:pointer;
+}
+
+/* VIDEO SECTION */
+
+.videos{
+padding:80px 10%;
+text-align:center;
+background:#020617;
+}
+
+iframe{
+margin-top:20px;
+border-radius:10px;
+}
+
+/* INFO */
+
+.info{
+padding:80px 10%;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:25px;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Pratik Studio</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#videos">Videos</a>
+<a href="#info">Info</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>Create Better Content</h1>
+
+<p>Premium resources for creators. Get editing packs, thumbnails and tools used in my videos.</p>
+
+<button>Explore Products</button>
+
+</section>
+
+<section class="products" id="products">
+
+<h2>Premium Products</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<h3>Editing Preset Pack</h3>
+<p class="price">₹49</p>
+<p>Professional presets for gaming edits.</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<h3>Thumbnail Pack</h3>
+<p class="price">₹79</p>
+<p>High CTR thumbnails for YouTube.</p>
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+<h3>Sound Effects Pack</h3>
+<p class="price">₹39</p>
+<p>No copyright gaming sound effects.</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="videos" id="videos">
+
+<h2>Latest Video</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/VIDEOID"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section class="info" id="info">
+
+<h2>About</h2>
+
+<p>
+This website is connected to my YouTube channel where I share gaming edits,
+tutorials and creative resources for creators.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Pratik Studio</p>
+
+</footer>
+
+</body>
+</html>
